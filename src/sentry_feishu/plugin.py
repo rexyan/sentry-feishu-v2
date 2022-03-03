@@ -95,7 +95,7 @@ class FeiShuPlugin(NotificationPlugin):
                             {
                                 "is_short": True,
                                 "text": {
-                                    "content": u"**📍 环境信息**\n " + event.get_tag('environment'),
+                                    "content": u"**📍 环境信息**\n " + event.get_tag('environment') or "",
                                     "tag": "lark_md"
                                 }
                             },

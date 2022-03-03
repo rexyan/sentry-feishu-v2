@@ -88,14 +88,14 @@ class FeiShuPlugin(NotificationPlugin):
                             {
                                 "is_short": True,
                                 "text": {
-                                    "content": "**🗳 系统名称**\n " + event.project.slug,
+                                    "content": u"**🗳 系统名称**\n " + event.project.slug,
                                     "tag": "lark_md"
                                 }
                             },
                             {
                                 "is_short": True,
                                 "text": {
-                                    "content": "**📍 环境信息**\n " + event.get_tag('environment'),
+                                    "content": u"**📍 环境信息**\n " + event.get_tag('environment'),
                                     "tag": "lark_md"
                                 }
                             },
@@ -109,14 +109,14 @@ class FeiShuPlugin(NotificationPlugin):
                             {
                                 "is_short": True,
                                 "text": {
-                                    "content": "**🕙 触发时间**\n " + datetime.datetime.now().strftime('%Y-%m-%d  %H:%M:%S'),
+                                    "content": u"**🕙 触发时间**\n " + datetime.datetime.now().strftime('%Y-%m-%d  %H:%M:%S'),
                                     "tag": "lark_md"
                                 }
                             },
                             {
                                 "is_short": True,
                                 "text": {
-                                    "content": "**📩 错误摘要**\n " + message,
+                                    "content": u"**📩 错误摘要**\n " + message,
                                     "tag": "lark_md"
                                 }
                             }
@@ -126,7 +126,7 @@ class FeiShuPlugin(NotificationPlugin):
                     {
                         "tag": "div",
                         "text": {
-                            "content": "😊 Sentry 地址：http://172.30.0.93:9000 \n🙈 系统发布流程与规范：https://cyclone.feishu.cn/docs/doccncIqdU5VExJrXb4JUo4adbb \n\n",
+                            "content": u"😊 Sentry 地址：http://172.30.0.93:9000 \n🙈 系统发布流程与规范：https://cyclone.feishu.cn/docs/doccncIqdU5VExJrXb4JUo4adbb \n\n",
                             "tag": "lark_md"
                         }
                     },
@@ -135,7 +135,7 @@ class FeiShuPlugin(NotificationPlugin):
                             {
                                 "tag": "button",
                                 "text": {
-                                    "content": "查看告警详情",
+                                    "content": u"查看告警详情",
                                     "tag": "plain_text"
                                 },
                                 "type": "danger",
@@ -148,7 +148,7 @@ class FeiShuPlugin(NotificationPlugin):
                 "header": {
                     "template": "red",
                     "title": {
-                        "content": "📢 服务告警通知",
+                        "content": u"📢 服务告警通知",
                         "tag": "plain_text"
                     }
                 }
